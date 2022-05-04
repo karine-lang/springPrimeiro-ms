@@ -92,4 +92,19 @@ public class ProfessorService {
 	public void delete(int id) {
 		professorRepository.deleteById(id);
 	}
+	
+	public List<ProfessorDTO> searchByName(String nome){
+		//List<ProfessorEntity> lista = professorRepository.findByNomeContains(nome);
+		//List<ProfessorEntity> lista =  professorRepository.searchByNome(nome);
+		List<ProfessorEntity> lista =  professorRepository.searchByNomeNativeSQL(nome);
+		
+		
+		
+		List<ProfessorDTO> dtos = new ArrayList<>();
+		for (ProfessorEntity professorEntity : lista) {
+			dtos.add(professorEntity.toDTO() );
+		}
+	return dtos;
+	}
+	
 }

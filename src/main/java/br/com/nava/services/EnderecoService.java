@@ -23,26 +23,11 @@ public class EnderecoService {
 		
 		List<EnderecoDTO> listaDTO = new ArrayList<>();
 		
-		/*
-		 * for (int i = 0; i < lista.size(); i++) {
-			ProfessorEntity professorEntity = lista.get(i);
-		}*/
-		// foreach
-		// 1-) Tipo da variável de cada elemento da lista
-		// 2-) nome local da variável 
-		// - 3 lista com elementos a ser percorrido
+		
 		for (EnderecoEntity enderecoEntity : lista) {						
 			
-			//ProfessorDTO dto = new ProfessorDTO();
 			
-			//dto.setId( professorEntity.getId() );
-			//dto.setCep( professorEntity.getCep() );
-			//dto.setCpf( professorEntity.getCpf() );
-			//dto.setNome( professorEntity.getNome() );
-			//dto.setNumero( professorEntity.getNumero() );
-			//dto.setRua( professorEntity.getRua() );
 			
-			//listaDTO.add(dto);
 		listaDTO.add(enderecoEntity.toDTO());
 			
 		}

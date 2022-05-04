@@ -14,7 +14,7 @@ import org.modelmapper.ModelMapper;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import br.com.nava.dtos.EnderecoDTO;
-import br.com.nava.dtos.ProfessorDTO;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

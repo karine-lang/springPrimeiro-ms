@@ -37,7 +37,7 @@ public class ResourceExcepitonHandler {
 		error.setMessage("Erro de deletar registro");
 		error.setPath(request.getRequestURI());
 		
-		//return error;
+	
 		return ResponseEntity.status(HttpStatus.OK).body(error);
 	
 }
